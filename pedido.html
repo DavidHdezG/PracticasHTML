@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body>
+    <h1>Pedido de pasteles</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">¿Cuál es tu nombre? </label> <br>
+        <input type="text" name="Nombre" id="Nombre">
+        <br><br><br>
+
+        <label for="Telefono">Teléfono</label>
+        <input type="text" name="Telefono" id="Telefono">
+        <br><br><br>
+
+        <label for="Email">Correo Electrónico</label>
+        <input type="text" name="Email" id="Email">
+        <br><br><br>
+
+        <label for="Descripcion">Descripción general del pastel</label> <br>
+        <textarea name="Descripcion" id="Descripcion" cols="30" rows="10"></textarea>
+
+        <p>¿De qué sabor?</p>
+        <input type="checkbox" name="chocolate" id="chocolate" value="Chocolate"/>
+        <label for="chocolate">Chocolate
+            <img src="./images/chocolate.png" alt="" width="100 px">
+        </label> <br>
+
+        <input type="checkbox" name="fresa" id="fresa" value="Fresa"/>
+        <label for="fresa">Fresa
+            <img src="./images/fresa.png" alt="" width="100 px">
+        </label><br>
+
+        <input type="checkbox" name="vainilla" id="vainilla" value="Vainilla"/>
+        <label for="vainilla">Vainilla
+            <img src="./images/vainilla.png" alt="" width="100 px">
+        </label><br>
+
+        <p>¿De qué tipo?</p>
+        <input type="radio" name="tipo" id="seco"/>
+        <label for="seco">Seco</label>
+
+        <input type="radio" name="tipo" id="leches"/>
+        <label for="leches">De 3 Leches</label>
+
+        <p>¿Con que decoración?</p>
+        <input type="checkbox" name="decoracion" id="fontaine">
+        <label for="fontaine">Fontaine .. +$10</label>
+
+        <br>
+
+        <input type="checkbox" name="decoracion" id="chantilli">
+        <label for="chantilli">Chantilly</label>
+
+        <p>¿De qué tamaño?</p>
+        <input type="radio" name="tamano" id="chico" value="Chico"/>
+        <label for="chico">Chico</label> <br>
+
+        <input type="radio" name="tamano" id="Mediano" value="Mediano"/>
+        <label for="mediano">Mediano</label><br>
+
+        <input type="radio" name="tamano" id="grande" value="Grande"/>
+        <label for="grande">Grande</label><br>
+        <br><br>
+
+        <input type="submit" value="Enviar"> 
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>
